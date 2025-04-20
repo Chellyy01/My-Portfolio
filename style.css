@@ -1,0 +1,552 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font: 400 1rem "Roboto", sans-serif;
+  line-height: 2rem;
+  background-color: rgb(235, 235, 230);
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+button,
+form,
+input,
+textarea {
+  font: inherit;
+}
+
+header {
+  background-image: url(images/arnold-francisca-nPhl2x4fk2s-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.menu-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  padding: 1.5rem 2rem;
+  box-sizing: border-box;
+}
+
+.menu-bar h1 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.nav-bar ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  gap: 1rem;
+}
+
+.nav-bar ul li {
+  width: 100%;
+}
+
+ul a {
+  padding: 0 1rem;
+  text-decoration: none;
+  color: white;
+  width: 100%;
+}
+
+ul a:hover,
+.description a:hover {
+  background-color: yellow;
+  padding: 1rem 1rem;
+  color: black;
+  border: none;
+  font-size: 1.2rem;
+}
+
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.my-profile {
+  text-align: center;
+  font-size: 1.2rem;
+  padding-top: 13rem;
+  padding-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.name {
+  white-space: nowrap;
+}
+
+header .socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  background-color: rgba(255, 252, 252, 0.5);
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 1rem;
+  transition: transform 0.3s;
+}
+
+header .socials img {
+  height: 2rem;
+  width: 2rem;
+}
+
+.socials img:hover {
+  transform: scale(1.4);
+  background-color: yellow;
+  border-radius: 50%;
+}
+
+button {
+  padding: 0.8rem 1.5rem;
+  color: white;
+  background-color: #000;
+  border: none;
+  border-radius: 2.5rem;
+}
+
+.cvbutton:hover, button:hover {
+  color: yellow;
+  font-size: 1.5rem;
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateY(10rem);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#about {
+  display: flex;
+  gap: 5rem;
+  padding: 5rem;
+  background-color: white;
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+.my-picture {
+  width: 30rem;
+  height: 30rem;
+  object-fit: cover;
+  object-position: center;
+}
+
+.underline {
+  display: inline-block;
+  border-bottom: 3px solid #52a3ff;
+}
+
+section h1 {
+  text-align: center;
+  font-size: 2rem;
+  padding-bottom: 2rem;
+}
+
+.more p {
+  text-align: justify;
+}
+
+section p {
+  white-space: no-wrap;
+}
+
+#projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
+  padding: 0 5rem;
+}
+
+#projects h1 {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.project-img img {
+  height: 100%;
+  width: 25rem;
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.project-img img:hover {
+  transform: scale(1.1);
+}
+
+.project-card {
+  text-align: center;
+  background-color: white;
+  padding: 4rem;
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  position: relative;
+}
+
+.description {
+  padding-left: 25rem;
+}
+
+.description a {
+  text-decoration: none;
+  color: #506602;
+}
+
+#skills {
+  width: 100%;
+  max-width: 30rem;
+  margin: 0 auto;
+  font-family: sans-serif;
+}
+
+.skill {
+  margin-bottom: 1.5rem;
+}
+
+.bar {
+  background-color: white;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.fill {
+  background: linear-gradient(to right, #f3f8a8, #344202);
+  color: white;
+  padding: 0.3rem 0.6rem;
+  border-radius: 1rem 0 0 1rem;
+  text-align: right;
+  height: 100%;
+  font-weight: bold;
+}
+
+#contact {
+  background-color: #c9c496;
+  padding: 5rem 0;
+}
+
+form {
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+input,
+textarea {
+  width: 35rem;
+  padding: 0.5rem 1.5rem;
+  border: none;
+}
+
+footer {
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+footer .socials {
+  background-color: transparent;
+  display: flex;
+  gap: 1.5rem;
+}
+
+footer .socials img {
+  height: 1.2rem;
+  width: 1.2rem;
+}
+
+@media (max-width: 63rem) {
+  .menu-bar {
+    font-size: 0.8rem;
+  }
+
+  .my-profile {
+    font-size: 1.2rem;
+    gap: 2rem;
+    padding-top: 11rem;
+  }
+
+  header .socials img {
+    height: 1.8rem;
+  }
+
+  .socials {
+    padding-top: 1rem;
+    padding-bottom: 0;
+    gap: 1.5rem;
+  }
+
+  #about {
+    padding: 5rem 3rem;
+    gap: 2.5rem;
+  }
+
+  .my-picture {
+    width: 25rem;
+    height: 25rem;
+  }
+  #projects {
+    padding: 0 3rem;
+  }
+  .project-card {
+    padding: 2rem;
+  }
+
+  .description a:hover {
+    padding: 0.5rem 1rem;
+  }
+
+  button {
+    padding: 0.5rem 1rem;
+  }
+
+  button:hover {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 54rem) {
+  .my-picture {
+    height: 20rem;
+    width: 20rem;
+  }
+
+  #projects {
+    padding: 0 3rem;
+  }
+
+  .project-img img {
+    width: 18rem;
+  }
+
+  .project-card {
+    padding: 2rem;
+  }
+
+  .description {
+    padding-left: 18rem;
+  }
+
+  #skills {
+    width: 100%;
+    max-width: 25rem;
+    margin: 0 auto;
+    font-family: sans-serif;
+  }
+
+  .skill {
+    margin-bottom: 1rem;
+  }
+
+  .fill {
+    padding: 0.2rem 0.3rem;
+  }
+
+  input,
+  textarea {
+    width: 30rem;
+  }
+
+  footer {
+    font-size: 0.6rem;
+    align-items: center;
+  }
+
+  footer .socials {
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 45rem) {
+  body {
+    line-height: 1.5rem;
+    gap: 3rem;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .nav-bar {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+    z-index: 2;
+  }
+
+  .nav-bar-show {
+    display: block;
+  }
+
+  .nav-bar ul {
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+
+  .nav-bar ul li a:hover {
+    display: block;
+    background-color: yellow;
+  }
+
+  #about {
+    flex-direction: column-reverse;
+    align-self: center;
+    justify-content: center;
+  }
+
+  .my-picture {
+    width: 100%;
+    height: 25rem;
+    object-fit: cover;
+  }
+
+  #projects {
+    gap: 3rem;
+  }
+
+  #skills {
+    padding-top: 3rem;
+  }
+  .project-card {
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
+  }
+
+  .project-img img {
+    width: 100%;
+    height: 18rem;
+    object-fit: cover;
+    object-position: center;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .description {
+    padding-left: 0;
+    padding-top: 18rem;
+  }
+
+  .description h2 {
+    padding-bottom: 1.5rem;
+  }
+
+  input,
+  textarea {
+    width: 20rem;
+    padding: 0.2rem 1rem;
+  }
+
+  footer {
+    font-size: 0.5rem;
+    white-space: nowrap;
+    padding: 0.2rem 0.5rem;
+  }
+
+  footer .socials {
+    gap: 0.5rem;
+  }
+
+  footer .socials img {
+    height: 0.8rem;
+    width: 0.8rem;
+  }
+}
+
+@media (max-width: 27rem) {
+  section h1 {
+    padding-top: 0;
+    margin-top: 0;
+  }
+
+  button {
+    padding: 0.2rem 0.8rem;
+    font-size: 0.8rem;
+  }
+
+  button:hover {
+    font-size: 1rem;
+  }
+
+  .my-profile {
+    font-size: 1rem;
+    gap: 1.2rem;
+  }
+
+  header .socials {
+    gap: 1rem;
+  }
+
+  #about,
+  #projects,
+  .project-card,
+  #skills {
+    padding: 3rem 1.2rem;
+  }
+
+  .description {
+    padding-top: 18rem 0.2rem;
+  }
+  #skills {
+    max-width: 13rem;
+  }
+
+  .skill {
+    margin-bottom: 1rem;
+  }
+
+  .fill {
+    padding: 0.2rem 0.2rem;
+  }
+
+  #contact {
+    background-color: #c9c496;
+    padding: 3rem 0;
+  }
+
+  input,
+  textarea {
+    width: 15rem;
+    padding: 0.2rem 0.8rem;
+  }
+}
