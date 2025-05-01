@@ -16,7 +16,7 @@ My personal portfolio showcasing my skills, projects, and experience as a Fronte
 ## 📷 Preview
 🔗 [Live Site](https://chellyy01.github.io/My-Portfolio/)
 
-![Screenshot](./IMG_1997.jpeg)
+![Screenshot](./IMG_2076.jpeg)
 
 ## 📂 How to Use
 1. Clone the repository
