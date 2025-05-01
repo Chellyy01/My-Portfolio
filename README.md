@@ -14,7 +14,7 @@ My personal portfolio showcasing my skills, projects, and experience as a Fronte
 - Contact form integration (FormSubmit)
 
 ## 📷 Preview
-🔗 [Live Site](https://chellyy01.github.io/Portfolio/)
+🔗 [Live Site](https://chellyy01.github.io/My-Portfolio/)
 
 ![Screenshot](./IMG_1997.jpeg)
 
